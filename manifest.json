@@ -1,0 +1,17 @@
+{
+  "name": "Link Finder",
+  "version": "1.0",
+  "description": "Find all of the links on the current webpage.",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "*://*/*"
+  ],
+  "browser_action": {
+      "default_title": "Link Finder",
+      "default_icon": "linkFind.png",
+      "default_popup": "index.html"
+  },
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+}

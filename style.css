@@ -1,0 +1,12 @@
+body{
+  width:350px;
+}
+#titleText{
+  text-align: center;
+}
+ul{
+  padding:10px;
+}
+li{
+  margin-bottom: 5px;
+}
