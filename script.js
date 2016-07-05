@@ -1,7 +1,6 @@
-chrome.tabs.query({active: true, lastFocusedWindow: true }, function(tabs) {
-    // and use that tab to fill in out title and url
-    var tab = tabs[0];
-    document.getElementById("titleText").innerHTML = "Links for: " + tab.url;
+chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
+  var tab = tabs[0].title;
+  document.getElementById("titleText").innerHTML = "Links for: " + tab;
 });
 
 chrome.tabs.executeScript(null,{code:"document.getElementsByTagName('a').length;"},function(len){
